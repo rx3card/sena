@@ -1,0 +1,7 @@
+# Documento de la actividad (no se sube al repo, solo los ejercicios)
+Actividad_Estructuras_Selectivas_y_Repetitivas.docx
+Actividad_Estructuras_Selectivas_y_Repetitivas.pdf
+
+# Archivos compilados de Python
+__pycache__/
+*.pyc
