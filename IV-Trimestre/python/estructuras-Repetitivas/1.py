@@ -3,7 +3,6 @@
 neutros.
 """
 
-# Variables para ir contando cada tipo de numero
 contador = 0
 cantidadPositivos = 0
 cantidadNegativos = 0
@@ -11,7 +10,6 @@ cantidadNeutros = 0
 
 print("Por favor ingrese 20 numeros:")
 
-# Se repite 20 veces, una por cada numero que se pide
 while contador < 20:
     numero = int(input(f"Ingrese el numero {contador + 1}: "))
 

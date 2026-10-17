@@ -4,7 +4,6 @@ Realizar un algoritmo para calcular el promedio y la calificacion mas alta y mas
 de todo el grupo.
 """
 
-# Menu de opciones controlado con un ciclo while True
 while True:
     print("\n--- CALIFICACIONES DEL GRUPO ---")
     print("1) Ingresar las 20 calificaciones")
@@ -21,7 +20,6 @@ while True:
             nota = int(input(f"Ingrese la calificacion del alumno {contador + 1}: "))
             suma += nota
 
-            # En la primera vuelta la mayor y la menor son la primera nota
             if contador == 0:
                 notaMayor = nota
                 notaMenor = nota

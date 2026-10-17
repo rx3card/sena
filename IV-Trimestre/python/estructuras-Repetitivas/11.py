@@ -19,7 +19,6 @@ while True:
         alturaMayor170 = 0
         alturaMenor150 = 0
 
-        # Se repite hasta que la edad ingresada sea 0
         while True:
             edad = int(input("\nIngrese la edad del alumno (0 para terminar): "))
 

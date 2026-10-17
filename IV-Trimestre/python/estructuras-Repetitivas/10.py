@@ -6,7 +6,6 @@ Ejemplo: (1 * 2 * 3 * 4 * 5 ...).
 contador = 1
 producto = 1
 
-# Se multiplica el acumulador por cada numero del 1 al 20
 while contador <= 20:
     producto = producto * contador
     contador += 1

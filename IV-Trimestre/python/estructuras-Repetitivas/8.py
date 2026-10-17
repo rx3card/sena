@@ -24,7 +24,6 @@ while True:
         while contador < 23:
             nota = int(input(f"Calificacion del estudiante {contador + 1} (1 a 100): "))
 
-            # Si la nota no esta en el rango valido se vuelve a pedir
             if nota < 1 or nota > 100:
                 print("La calificacion debe estar entre 1 y 100.")
                 continue

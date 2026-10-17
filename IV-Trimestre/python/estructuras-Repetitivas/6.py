@@ -26,7 +26,6 @@ while True:
                 mujeres += 1
                 contador += 1
             else:
-                # Si se equivoca no se cuenta esta persona y se vuelve a pedir
                 print("Opcion invalida, no se conto esta persona.")
                 continue
 

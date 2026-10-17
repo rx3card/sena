@@ -13,12 +13,9 @@ numero = int(input("Ingrese un numero para ver su tabla de multiplicar: "))
 
 print(f"\nTabla de multiplicar del {numero}:")
 
-# Ahora se usa while y el multiplicador arranca en 1
 multiplicador = 1
 
 while multiplicador <= 12:
-    # Con continue se salta el 5, pero primero hay que aumentar el multiplicador
-    # para no quedar en un ciclo infinito
     if multiplicador == 5:
         multiplicador += 1
         continue
