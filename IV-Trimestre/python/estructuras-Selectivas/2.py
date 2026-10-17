@@ -18,11 +18,11 @@ El descuento consiste en: ${total*0.20}
 El total es: ${total-total*0.20}
     """)
 
-elif cantidad <3 & cantidad !=0:
+elif cantidad < 3 and cantidad != 0:
     print(f"""
-Tienes 10% de descuento por comprar mas de tres zapatillas 
+Tienes 10% de descuento por comprar menos de tres zapatillas
 Sub-total (sin descuento): ${total}
-El descuento consiste en: ${(total)-(total*0.10)}
+El descuento consiste en: ${total*0.10}
 El total es: ${total-total*0.10}
     """)
 

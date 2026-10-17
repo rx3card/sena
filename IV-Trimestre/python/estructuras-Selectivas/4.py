@@ -17,7 +17,7 @@ if color == "Rojo":
     print(f"TOTAL ${productoPrecio-(productoPrecio*0.15)}")
 elif color == "Verde":
     print(f"Felicidades tu numero de balota fue el {color}\nTienes un descuento del 20%, sobre el total de tu compra")
-    rint(f"Color de la balota {color}")
+    print(f"Color de la balota {color}")
     print(f"Descuento ${productoPrecio*0.20}")
     print(f"TOTAL ${productoPrecio-(productoPrecio*0.20)}")
 else:
