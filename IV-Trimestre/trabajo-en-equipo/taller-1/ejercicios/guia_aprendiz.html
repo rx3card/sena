@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Oscar Rojas y Santiago Diaz">
-    <meta name="description" content="Guia rapida para que un aprendiz nuevo del SENA pueda empezar a programar en Python">
-    <meta name="keywords" content="python, guia, SENA, aprendiz, principiantes">
+    <meta name="description" content="Guia completa para que un aprendiz nuevo del SENA pueda empezar a programar en Python desde cero">
+    <meta name="keywords" content="python, guia, SENA, aprendiz, principiantes, programacion, ADSO">
     <title>Primeros pasos con Python</title>
 </head>
 
@@ -15,90 +15,318 @@
     <h1>Primeros pasos con Python</h1>
 
     <p>
-        Guia hecha por <strong>Oscar Rojas</strong> y <strong>Santiago Diaz</strong> para que un
-        aprendiz nuevo del SENA pueda empezar a programar en Python desde cero. La idea es que
-        pueda escribir su primer programa sin complicarse.
+        Guia hecha por <strong>Oscar Rojas</strong> y <strong>Santiago Diaz</strong>, aprendices
+        del SENA en el programa de Analisis y Desarrollo de Software (ADSO). La idea de este
+        documento es que un aprendiz nuevo que nunca haya programado pueda entender de que se
+        trata Python, instalarlo en su computador y escribir su primer programa sin complicarse.
     </p>
+
+    <p>
+        <em>Importante:</em> esta guia esta pensada para principiantes totales, por eso tratamos
+        de explicar cada paso lo mas sencillo posible y usando palabras del dia a dia. Si en algun
+        momento algo no funciona, no se preocupe, es completamente normal al empezar.
+    </p>
+
+    <img src="./../imagenes/python-logo.png" alt="Logo oficial del lenguaje de programacion Python">
 
     <h2>¿Que es Python?</h2>
 
     <p>
-        Python es un <em>lenguaje de programacion</em> sencillo de leer y muy usado en desarrollo
-        web, analisis de datos y automatizacion. Para nosotros los aprendices es una buena opcion
-        para empezar porque la sintaxis es facil de entender.
+        Python es un <em>lenguaje de programacion</em> creado en el año 1991 por Guido van Rossum.
+        Hoy en dia es uno de los lenguajes mas populares del mundo porque es facil de leer, se
+        parece mucho al ingles comun y se puede usar en muchas areas diferentes.
     </p>
+
+    <p>
+        A diferencia de otros lenguajes como Java o C, Python no obliga a escribir tantas cosas
+        extras para que un programa funcione. Por ejemplo, para imprimir un mensaje en la pantalla
+        solo se necesita una linea de codigo. Esa es una de las razones por las que lo escogen
+        mucho en los colegios, en las universidades y en el mismo SENA para empezar.
+    </p>
+
+    <h3>¿Para que sirve Python en la vida real?</h3>
+
+    <p>
+        Python no es solo para hacer ejercicios de clase, en el mundo real se usa para cosas
+        muy diferentes. Algunos ejemplos son:
+    </p>
+
+    <ul>
+        <li><strong>Paginas web:</strong> empresas como Instagram, Spotify y YouTube usan Python en sus servidores.</li>
+        <li><strong>Analisis de datos:</strong> para procesar informacion y sacar graficas.</li>
+        <li><strong>Inteligencia artificial:</strong> la mayoria de modelos de IA se entrenan en Python.</li>
+        <li><strong>Automatizacion:</strong> se pueden hacer programas que organicen archivos, descarguen cosas o envien correos automaticamente.</li>
+        <li><strong>Videojuegos sencillos:</strong> con librerias como pygame se pueden hacer juegos basicos.</li>
+        <li><strong>Scripts del dia a dia:</strong> para resolver tareas pequeñas rapidamente.</li>
+    </ul>
 
     <h2>Prepara tu entorno</h2>
 
     <p>
-        Antes de escribir el primer programa hay que preparar el computador. Los pasos son los
-        siguientes:
+        Antes de escribir el primer programa hay que preparar el computador. Esta parte es la que
+        mas trabajo da al principio pero solo se hace una vez. Los pasos son los siguientes:
     </p>
 
-    <ol>
-        <li>Descargar Python desde la pagina oficial.</li>
-        <li>Durante la instalacion marcar la casilla <strong>Add Python to PATH</strong>.</li>
-        <li>Instalar un editor de codigo, por ejemplo Visual Studio Code.</li>
-        <li>Abrir la terminal y escribir <strong>python --version</strong> para comprobar que quedo instalado.</li>
-    </ol>
+    <h3>Paso 1: Descargar Python</h3>
+
+    <p>
+        Hay que entrar a la pagina oficial de Python y descargar la version mas nueva. Es muy
+        importante bajarlo desde la pagina oficial y no de otros sitios, porque pueden traer
+        programas no deseados.
+    </p>
+
+    <p>
+        <a href="https://www.python.org/downloads" target="_blank">Descargar Python desde la pagina oficial</a>
+    </p>
+
+    <h3>Paso 2: Instalar Python</h3>
+
+    <p>
+        Al momento de instalar aparece una ventana. Aqui hay un detalle <strong>muy importante</strong>:
+        hay que marcar la casilla que dice <strong>Add Python to PATH</strong> antes de darle a
+        "Install Now". Si no se marca, despues la terminal no reconoce el comando python y toca
+        reinstalar todo.
+    </p>
+
+    <h3>Paso 3: Instalar un editor de codigo</h3>
+
+    <p>
+        Un editor de codigo es el programa donde se escriben los archivos .py. El mas recomendado
+        para principiantes es <strong>Visual Studio Code</strong> porque es gratis, pesa poco y
+        tiene muchas ayudas. Es el mismo que usamos en el SENA.
+    </p>
+
+    <h3>Paso 4: Comprobar que quedo instalado</h3>
+
+    <p>
+        Para saber si todo quedo bien, hay que abrir la terminal (en Windows se llama "cmd" o
+        "PowerShell") y escribir el comando:
+    </p>
+
+    <p>
+        <strong>python --version</strong>
+    </p>
+
+    <p>
+        Si la terminal responde con algo parecido a <em>Python 3.12.0</em> quiere decir que Python
+        quedo instalado correctamente. Si en cambio dice que no reconoce el comando, lo mas seguro
+        es que no se marco la casilla del Paso 2.
+    </p>
 
     <h2>Tu primer programa</h2>
 
     <p>
-        Ya con todo instalado se puede escribir el primer programa. Crear un archivo llamado
-        <strong>hola.py</strong> y adentro escribir la siguiente linea:
+        Ya con todo instalado se puede escribir el primer programa. Lo primero es abrir Visual
+        Studio Code, crear una carpeta nueva en el escritorio y adentro crear un archivo llamado
+        <strong>hola.py</strong>. La extension <em>.py</em> es la que le indica al computador que
+        ese es un archivo de Python.
     </p>
 
     <p>
-        <strong>print("Hola, mundo")</strong>
+        Dentro del archivo se escribe lo siguiente:
+    </p>
+
+    <img src="./../imagenes/codigo-python-ejemplo.png" alt="Codigo de ejemplo del primer programa en Python">
+
+    <p>
+        Luego se guarda el archivo y se abre la terminal dentro de Visual Studio Code (menu
+        Terminal, opcion "Nueva terminal"). Para ejecutar el programa se escribe:
     </p>
 
     <p>
-        Luego ejecutarlo en la terminal con <strong>python hola.py</strong>. Si en la pantalla
-        aparece el mensaje <em>Hola, mundo</em> quiere decir que ya programaste en Python.
+        <strong>python hola.py</strong>
     </p>
 
-    <img src="./../imagenes/foto1.png" alt="Imagen de referencia de la terminal con Python">
+    <p>
+        El resultado en la terminal se ve asi:
+    </p>
+
+    <img src="./../imagenes/terminal-ejecucion.png" alt="Resultado del primer programa de Python en la terminal">
+
+    <p>
+        Si en la pantalla aparece el mensaje <em>Hola, mundo</em> junto con las otras lineas,
+        quiere decir que ya programaste en Python. Felicitaciones, ese es el primer paso.
+    </p>
 
     <h2>Conceptos basicos para practicar</h2>
 
     <p>
         Una vez corre el primer programa, estos son los temas que conviene practicar en orden
-        para ir aprendiendo poco a poco:
+        para ir aprendiendo poco a poco. No hay que apurarse, es mejor entender bien cada uno
+        antes de pasar al siguiente.
+    </p>
+
+    <h3>1. Variables</h3>
+
+    <p>
+        Una variable es como una cajita donde se guarda un dato. Se le pone un nombre y adentro
+        se mete un valor. Por ejemplo:
     </p>
 
     <ul>
-        <li><strong>Variables:</strong> guardan datos, por ejemplo nombre = "Ana".</li>
-        <li><strong>Tipos de datos:</strong> texto, numeros enteros y decimales.</li>
-        <li><strong>Condicionales:</strong> if, elif y else.</li>
-        <li><strong>Ciclos:</strong> for y while.</li>
-        <li><strong>Funciones:</strong> bloques de codigo que se pueden reutilizar.</li>
+        <li><strong>nombre = "Ana"</strong> guarda el texto Ana en la variable nombre.</li>
+        <li><strong>edad = 17</strong> guarda el numero 17 en la variable edad.</li>
+        <li><strong>promedio = 4.5</strong> guarda un numero con decimales.</li>
     </ul>
 
-    <h3>Consejos finales</h3>
-
     <p>
-        Lo mas importante al empezar es <em>no rendirse</em> si algo no funciona a la primera.
-        Casi siempre el error esta en un detalle pequeño como una comilla o un parentesis. Leer
-        el mensaje de error con calma ayuda bastante.
+        Despues se puede usar la variable en otras partes del programa sin tener que repetir el
+        valor. Por ejemplo <em>print(nombre)</em> muestra en pantalla el texto Ana.
     </p>
 
-    <h3>Fuente confiable</h3>
+    <h3>2. Tipos de datos</h3>
 
     <p>
-        Para descargar Python y leer la documentacion oficial se puede visitar:
+        En Python los datos se dividen principalmente en:
+    </p>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Tipo</th>
+                <th>Nombre en Python</th>
+                <th>Ejemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Texto</td>
+                <td>str</td>
+                <td>"Hola"</td>
+            </tr>
+            <tr>
+                <td>Numero entero</td>
+                <td>int</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Numero decimal</td>
+                <td>float</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>Verdadero o falso</td>
+                <td>bool</td>
+                <td>True o False</td>
+            </tr>
+            <tr>
+                <td>Lista</td>
+                <td>list</td>
+                <td>[1, 2, 3]</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>3. Condicionales (if, elif, else)</h3>
+
+    <p>
+        Los condicionales le permiten al programa <em>tomar decisiones</em>. Por ejemplo, si una
+        persona tiene mas de 18 años se dice que es mayor de edad, y si no, es menor. En Python
+        se escribe asi:
+    </p>
+
+    <img src="./../imagenes/codigo-condicional.png" alt="Ejemplo de un condicional if, else en Python">
+
+    <p>
+        La palabra <strong>if</strong> significa "si" en ingles y la palabra <strong>else</strong>
+        significa "si no". La combinacion <strong>elif</strong> es como un "o si no, pero si
+        pasa otra cosa".
+    </p>
+
+    <h3>4. Ciclos (for y while)</h3>
+
+    <p>
+        Los ciclos sirven para <em>repetir</em> una accion varias veces. En el SENA empezamos
+        viendo el ciclo <strong>while</strong>, que repite mientras una condicion sea verdadera.
+        Un ejemplo es:
+    </p>
+
+    <ul>
+        <li><strong>while contador &lt; 5:</strong> repite el bloque mientras contador sea menor que 5.</li>
+        <li><strong>for i in range(10):</strong> repite el bloque 10 veces, de 0 hasta 9.</li>
+    </ul>
+
+    <p>
+        Los ciclos son muy utiles cuando se tiene que hacer la misma tarea muchas veces, por
+        ejemplo mostrar la tabla de multiplicar de un numero o pedirle al usuario que vuelva a
+        intentar hasta que escriba un dato correcto.
+    </p>
+
+    <h3>5. Funciones</h3>
+
+    <p>
+        Una funcion es un <em>bloque de codigo con nombre</em> que se puede reutilizar las veces
+        que uno quiera. En vez de escribir las mismas lineas una y otra vez, se guardan dentro
+        de una funcion y despues solo se llama por el nombre. Un ejemplo basico es:
     </p>
 
     <p>
-        <a href="https://www.python.org/downloads" target="_blank">Pagina oficial de Python</a>
+        <strong>def saludar(nombre):</strong> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<strong>print("Hola", nombre)</strong>
     </p>
+
+    <p>
+        Y despues en el programa se llama con <em>saludar("Oscar")</em> y la pantalla muestra
+        "Hola Oscar".
+    </p>
+
+    <h2>Errores comunes al empezar</h2>
+
+    <p>
+        Es normal que al principio salgan errores. Son parte del aprendizaje. Estos son los que
+        mas nos pasaron a nosotros cuando empezamos:
+    </p>
+
+    <ol>
+        <li>Olvidar las comillas al escribir un texto, por ejemplo <em>print(Hola)</em> en vez de <em>print("Hola")</em>.</li>
+        <li>No poner los dos puntos al final de un <strong>if</strong>, un <strong>while</strong> o un <strong>for</strong>.</li>
+        <li>No respetar la indentacion (los espacios al principio de la linea). Python es muy estricto con eso.</li>
+        <li>Mezclar nombres de variables en mayusculas y minusculas, porque <em>Nombre</em> y <em>nombre</em> son distintos para Python.</li>
+        <li>Usar una variable antes de haberla creado.</li>
+    </ol>
+
+    <h2>Recomendaciones finales</h2>
+
+    <p>
+        Para terminar les queremos dejar unos consejos que a nosotros nos han servido mucho en
+        el SENA:
+    </p>
+
+    <ul>
+        <li><strong>Practicar todos los dias</strong> aunque sea 15 minutos. Es mejor practicar poquito pero seguido que mucho solo un dia.</li>
+        <li><strong>No copiar y pegar sin entender.</strong> Es preferible escribir el codigo a mano porque asi se queda en la cabeza.</li>
+        <li><strong>Leer los mensajes de error con calma.</strong> Casi siempre dicen en que linea esta el problema.</li>
+        <li><strong>Preguntar al instructor o a los compañeros.</strong> Nadie nace sabiendo y preguntar no es nada malo.</li>
+        <li><em>No rendirse</em> si algo no funciona a la primera. Casi siempre el error esta en un detalle pequeño como una coma o un parentesis.</li>
+    </ul>
+
+    <h2>Fuentes confiables</h2>
+
+    <p>
+        Para seguir aprendiendo por su cuenta, estos son algunos sitios recomendados:
+    </p>
+
+    <ul>
+        <li>
+            <a href="https://www.python.org/downloads" target="_blank">Pagina oficial de Python</a>
+            - para descargar Python y leer la documentacion.
+        </li>
+        <li>
+            <a href="https://docs.python.org/es/3/tutorial/" target="_blank">Tutorial oficial en español</a>
+            - tutorial completo y gratuito.
+        </li>
+        <li>
+            <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
+            - para descargar el editor de codigo recomendado.
+        </li>
+    </ul>
 
     <br>
     <a href="./../index.html">Volver al incio</a>
 
-    <!-- Se usaron las etiquetas h1, h2 y h3 para organizar la informacion en titulo principal y subtitulos como lo pide el reto. -->
-    <!-- Se uso el atributo target="_blank" en el enlace externo para que la pagina oficial de Python abra en una pestaña nueva y no se pierda la guia. -->
-    <!-- Despues de probar la pagina con Santiago nos dimos cuenta que faltaba una imagen de referencia, asi que agregamos la foto de la terminal para que se entienda mejor. -->
+    <!-- Se usaron las etiquetas h1, h2 y h3 para organizar la informacion en un titulo principal y varios subtitulos como lo pide el reto, asi la guia queda ordenada por secciones. -->
+    <!-- Se uso el atributo target="_blank" en todos los enlaces externos para que las paginas abran en una pestaña nueva y el aprendiz no pierda la guia mientras consulta. -->
+    <!-- Despues de probar la pagina con Santiago nos dimos cuenta que al principio estaba muy corta y faltaban imagenes de ejemplo, por eso agregamos las capturas del codigo, la terminal y una tabla con los tipos de datos para que se entienda mejor. -->
 </body>
 
 </html>
